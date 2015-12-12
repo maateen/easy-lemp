@@ -7,8 +7,11 @@ EasyLEMP is a Python3 script. EasyLEMP will help you to install LEMP (<b>Nginx, 
 
 # Installation
 <code>wget https://github.com/callmehuyv/EasyLEMP/archive/master.zip</code>
+
 <code>unzip Easy-LEMP-master.zip</code>
+
 <code>cd Easy-LEMP-master/</code>
+
 <code>python3 setup.py</code>
 
 # Usage
