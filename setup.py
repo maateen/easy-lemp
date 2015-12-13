@@ -1,5 +1,5 @@
-from lsb_release import get_lsb_information
 from os import environ, getcwd, mkdir, remove, system
+from lsb_release import get_lsb_information
 
 
 class NginX():
