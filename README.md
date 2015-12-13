@@ -7,6 +7,8 @@ EasyLEMP is a Python3 script. EasyLEMP will help you to install LEMP (<b>Nginx, 
 2. Working Internet Connection
 
 # Installation
+Press <i>Ctrl+Alt+T</i> to open Terminal in Ubuntu. Then apply the following commands one by one:
+
 <code>wget https://github.com/callmehuyv/EasyLEMP/archive/master.zip</code>
 
 <code>unzip Easy-LEMP-master.zip</code>
