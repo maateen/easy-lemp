@@ -50,6 +50,7 @@ class PHP():
 def get_codename():
 	#This function will get the codename of running Ubuntu
 	info = get_lsb_information()
+	
 	return info ['CODENAME']
 
 def update_package_lists():
