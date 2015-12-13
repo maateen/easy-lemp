@@ -7,7 +7,7 @@ class NginX():
 	def add_key(self):
 		#This method will add NginX signing key to the apt program keyring.
 		system("wget http://nginx.org/keys/nginx_signing.key")
-		return system("sudo apt-key add nginx_signing.key")
+		system("sudo apt-key add nginx_signing.key")
 
 	def add_repo(self):
 		#This method will add stable NginX ubuntu repo to /etc/apt/sources.list file.
