@@ -23,7 +23,7 @@ Press <i>Ctrl+Alt+T</i> to open Terminal in Ubuntu. Then apply the following com
 2. To access <b>phpMyAdmin</b>, just type <b>http://localhost/phpmyadmin</b> and press enter. To log in to phpMyAdmin, Use root as username and your MariaDB root password as password.
 
 # Testing
-Let's test the LEMP whether it's working or not.
+Let's test the LEMP server whether it's working or not.
 
 1. Create a <b>index.php</b> file within your web server root directory.
 
