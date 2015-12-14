@@ -2,7 +2,9 @@
 EasyLEMP is a Python3 script. EasyLEMP will help you to install LEMP (<b>Nginx, PHP-FPM, MariaDB</b>) on Linux along with <b>phpMyAdmin</b> with just four commands. Currently it only supports <b>Ubuntu Desktop Edition</b>. Support for <b>Ubuntu Server Edition</b> is now under development. Please, try to contribute if you can.
 
 # Version
-Easy-LEMP is in <b>alpha stage</b>. Please, create an issue with this link: https://github.com/ugcoder/Easy-LEMP/issues/new if you get one.
+Easy-LEMP is in <b>beta stage</b>. Please, create an issue with this link: https://github.com/ugcoder/Easy-LEMP/issues/new if you get one.
+>>>Alpha version: You can install Nginx, PHP-FPM, MariaDB, phpMyAdmin at once.
+>>>Beta Version: Implementing feature request by <b>Tarikur Rahaman Sohel</b>, making the script user interactive. Now you wan choose what you wanna install and what not.
 
 # Requirements
 1. Python 3
