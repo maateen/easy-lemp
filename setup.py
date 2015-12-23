@@ -1,4 +1,4 @@
-from os import environ, getcwd, mkdir, remove, system
+from os import environ, getcwd, mkdir, system
 from lsb_release import get_lsb_information
 from apt import Cache
 
