@@ -17,12 +17,12 @@ class NginX():
         # /etc/apt/sources.list file.
         codename = get_codename()
         system(
-            "sudo add-apt-repository \"deb http://nginx.org/packages/ubuntu/ " + codename + " nginx\"")
+            "sudo add-apt-repository -y \"deb http://nginx.org/packages/ubuntu/ " + codename + " nginx\"")
 
     def install_nginx(self):
         # This method will install the latest stable version of NginX available
         # to the added repo.
-        system("sudo apt-get install nginx nginx-common nginx-full")
+        system("sudo apt-get install -y nginx nginx-common nginx-full")
 
     def edit_nginx_conf_file(self, current_working_directory):
 		# This method will edit /etc/nginx/nginx.conf file.
@@ -79,11 +79,11 @@ class MariaDB():
         # /etc/apt/sources.list file.
         codename = get_codename()
         system(
-            "sudo add-apt-repository \"deb [arch=amd64,i386] http://mirror.jmu.edu/pub/mariadb/repo/10.1/ubuntu " + codename + " main\"")
+            "sudo add-apt-repository -y \"deb [arch=amd64,i386] http://mirror.jmu.edu/pub/mariadb/repo/10.1/ubuntu " + codename + " main\"")
 
     def install_mariadb(self):
         # This method will install MariaDB v10.1.
-        system("sudo apt-get install mariadb-server")
+        system("sudo apt-get install -y mariadb-server")
 
 
 class PHP():
@@ -94,12 +94,12 @@ class PHP():
         # This method will add PHP5 ubuntu repo with public key to
         # /etc/apt/sources.list file.
         codename = get_codename()
-        system("sudo add-apt-repository ppa:ondrej/php5-5.6")
+        system("sudo add-apt-repository -y ppa:ondrej/php5-5.6")
 
     def install_php(self):
         # This method will install the latest stable version of PHP available
         # to the added repo.
-        system("sudo apt-get install php5 php5-fpm php5-mysql")
+        system("sudo apt-get install -y php5 php5-fpm php5-mysql")
 
     def edit_php_fpm_www_conf_file(self, current_working_directory):
     	# This method will edit /etc/php5/fpm/pool.d/www.conf file.
@@ -137,7 +137,7 @@ def get_user_choice():
 def install_phpmyadmin():
 	# This function will install phpMyAdmin
     home_directory = environ['HOME']
-    system("sudo apt-get install phpmyadmin")
+    system("sudo apt-get install -y phpmyadmin")
     system("sudo ln -s /usr/share/phpmyadmin/ " +
            home_directory + "/public_html")
 
@@ -178,7 +178,7 @@ def main():
     choice = get_user_choice()
     if choice['nginx'] == 'y' or choice['mariadb'] == 'y' \
     		or choice['php'] == 'y' or choice['phpmyadmin'] == 'y':
-        system("sudo apt-get install software-properties-common")
+        system("sudo apt-get install -y software-properties-common")
 
         if choice['nginx'] == 'y' and choice['mariadb'] == 'y' \
 	    		and choice['php'] == 'y' and choice['phpmyadmin'] == 'y':
