@@ -16,7 +16,7 @@ Easy-LEMP is in <b>beta stage</b>. Please, create an issue with this link: https
 # Installation
 Press <i>Ctrl+Alt+T</i> to open Terminal in Ubuntu. Then apply the following commands one by one:
 
-<code>wget https://github.com/callmehuyv/EasyLEMP/archive/master.zip</code>
+<code>https://github.com/ugcoder/Easy-LEMP/archive/master.zip</code>
 
 <code>unzip Easy-LEMP-master.zip</code>
 
