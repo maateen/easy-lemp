@@ -16,24 +16,35 @@ Easy-LEMP is in <b>beta stage</b>. Please, create an issue with this link: https
 # Installation
 Press <i>Ctrl+Alt+T</i> to open Terminal in Ubuntu. Then apply the following commands one by one:
 
-<code>wget https://github.com/ugcoder/Easy-LEMP/archive/master.zip</code>
+```
+wget https://github.com/ugcoder/Easy-LEMP/archive/master.zip
+```
 
-<code>unzip Easy-LEMP-master.zip</code>
+```
+unzip Easy-LEMP-master.zip
+```
 
-<code>cd Easy-LEMP-master/</code>
+```
+cd Easy-LEMP-master/
+```
 
-<code>python3 setup.py</code>
+```
+python3 setup.py
+```
 
 # Usage
-1. <b>/home/username/public_html</b> is your <b>web server root</b> directory.
+1. **/home/username/public_html** is your **web server root** directory.
 
-2. To access <b>phpMyAdmin</b>, just type <b>http://localhost/phpmyadmin</b> and press enter. To log in to phpMyAdmin, Use root as username and your MariaDB root password as password.
+2. To access **phpMyAdmin**, just type **http://localhost/phpmyadmin** and press enter. To log in to phpMyAdmin, Use root as username and your MariaDB root password as password.
 
 # Testing
 Let's test the LEMP server whether it's working or not.
 
-1. Create a <b>index.php</b> file within your web server root directory.
+1. Create a **index.php** file within your web server root directory.
 
-2. Now paste the following code, then save it: <code><?php phpinfo(); ?></code>
+2. Now paste the following code, then save it: 
+```
+<?php phpinfo(); ?>
+```
 
-3. Now open your favorite browser and hit <b>http://localhost/</b>. If you can see the <b>PHP Information</b> page, then it's all right. Otherwise, create an issue with this link: https://github.com/ugcoder/Easy-LEMP/issues/new
+3. Now open your favorite browser and hit **http://localhost/**. If you can see the **PHP Information** page, then it's all right. Otherwise, create an issue with this link: https://github.com/ugcoder/Easy-LEMP/issues/new
