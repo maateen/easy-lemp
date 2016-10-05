@@ -12,7 +12,7 @@
   <body>
     <section class="page-header">
       <h1 class="project-name">Easy-LEMP</h1>
-      <h2 class="project-tagline">Easy-LEMP is a Python3 script. EasyLEMP will help you to install LEMP( Nginx, PHP-FPM, MariaDB on Linux) just with a single command.</h2>
+      <h2 class="project-tagline">A Python3 script, helps you to install LEMP( Nginx, PHP-FPM, MariaDB on Linux) just with a single command.</h2>
       <a href="https://github.com/maateen/easy-lemp" class="btn">View on GitHub</a>
       <a href="https://github.com/maateen/easy-lemp/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/maateen/easy-lemp/tarball/master" class="btn">Download .tar.gz</a>
@@ -46,20 +46,24 @@
 
 <p>Press <i>Ctrl+Alt+T</i> to open Terminal in Ubuntu. Then apply the following commands one by one:</p>
 
-<p><code>wget <a href="https://github.com/ugcoder/Easy-LEMP/archive/master.zip">https://github.com/ugcoder/Easy-LEMP/archive/master.zip</a></code></p>
+<pre><code>wget https://github.com/ugcoder/Easy-LEMP/archive/master.zip
+</code></pre>
 
-<p><code>unzip Easy-LEMP-master.zip</code></p>
+<pre><code>unzip Easy-LEMP-master.zip
+</code></pre>
 
-<p><code>cd Easy-LEMP-master/</code></p>
+<pre><code>cd Easy-LEMP-master/
+</code></pre>
 
-<p><code>python3 setup.py</code></p>
+<pre><code>python3 setup.py
+</code></pre>
 
 <h1>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
 
 <ol>
-<li><p><b>/home/username/public_html</b> is your <b>web server root</b> directory.</p></li>
-<li><p>To access <b>phpMyAdmin</b>, just type <b>http://localhost/phpmyadmin</b> and press enter. To log in to phpMyAdmin, Use root as username and your MariaDB root password as password.</p></li>
+<li><p><strong>/home/username/public_html</strong> is your <strong>web server root</strong> directory.</p></li>
+<li><p>To access <strong>phpMyAdmin</strong>, just type <strong>http://localhost/phpmyadmin</strong> and press enter. To log in to phpMyAdmin, Use root as username and your MariaDB root password as password.</p></li>
 </ol>
 
 <h1>
@@ -68,9 +72,16 @@
 <p>Let's test the LEMP server whether it's working or not.</p>
 
 <ol>
-<li><p>Create a <b>index.php</b> file within your web server root directory.</p></li>
-<li><p>Now paste the following code, then save it: <code>&lt;?php phpinfo(); ?&gt;</code></p></li>
-<li><p>Now open your favorite browser and hit <b>http://localhost/</b>. If you can see the <b>PHP Information</b> page, then it's all right. Otherwise, create an issue with this link: <a href="https://github.com/ugcoder/Easy-LEMP/issues/new">https://github.com/ugcoder/Easy-LEMP/issues/new</a></p></li>
+<li><p>Create a <strong>index.php</strong> file within your web server root directory.</p></li>
+<li><p>Now paste the following code, then save it: </p></li>
+</ol>
+
+<pre><code>&lt;?php phpinfo(); ?&gt;
+</code></pre>
+
+<ol>
+<li>Now open your favorite browser and hit <strong>http://localhost/</strong>. If you can see the <strong>PHP Information</strong> page, then it's all right. Otherwise, create an issue with this link: <a href="https://github.com/ugcoder/Easy-LEMP/issues/new">https://github.com/ugcoder/Easy-LEMP/issues/new</a>
+</li>
 </ol>
 
       <footer class="site-footer">
